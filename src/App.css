@@ -1,38 +1,81 @@
+.container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.title {
+    font-size: 50px;
+    margin-top: 0;
+    color: grey;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    width:400px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2),
+                -5px -5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form {
+    display: flex;
+    justify-content:space-between;
+    height: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-btn {
+    width: 60px;
+    border: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    background-color: rgb(196, 196, 196);
+    font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-input {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border: none;
+    flex: 1; 
+    font-size: 20px;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.list {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+    color: rgb(69, 69, 69);
+}
+
+.item-btn {
+    border: none;
+    background-color: white;
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    padding: 0 15px 10px 15px;
+}
+
+.footer-btn {
+    border: none;
+    background-color: rgb(196, 196, 196);
+    font-weight: bold;
+    padding: 5px;
 }
